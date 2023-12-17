@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+    <title>Contoh Tabel HTML dengan Formulir Input</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="RAHMAT.css"
+  />
+  <body>
+    <h2>Data Mahasiswa</h2>
+
+    <form>
+      <div class="container">
+        <label for="Nama">Nama:</label>
+        <input
+          type="text"
+          id="Nama"
+          name="Nama"
+          required
+        />
+
+        <label for="Nim">Nim:</label>
+        <input
+          type="text"
+          id="Nim"
+          name="Nim"
+          required
+        />
+      </div>
+    </form>
+    <div class="button-r">
+      <button
+        type="button"
+        onclick="addData()"
+      >
+        Tambah Data
+      </button>
+    </div>
+
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Nim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data akan ditambahkan secara dinamis melalui JavaScript -->
+      </tbody>
+    </table>
+
+    <script src="RAHMAT.js"></script>
+  </body>
+</html>
